@@ -3,8 +3,7 @@ import java.util.*;
 public class PlusOne {
     public static void main(String[] args) {
 
-        int digits[] = {4,3,2,1};
-
+        int digits[] = {9, 9, 9};
         int n = digits.length;
 
         for (int i = n - 1; i >= 0; i--) {
@@ -22,8 +21,8 @@ public class PlusOne {
     }
 
     static void printArray(int[] arr) {
-        for (int num : arr) {
-            System.out.print(num + " ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
     }
 }
