@@ -20,8 +20,8 @@ public class Bubble_sort {
                 }
             }
 
-            System.out.println(Arrays.toString(arr));
         }
+        System.out.println("Sorted array is: " + Arrays.toString(arr));
     }
 }
 
