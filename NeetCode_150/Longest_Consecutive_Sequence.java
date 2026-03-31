@@ -1,36 +1,29 @@
+package NeetCode_150;
 
-import java.nio.channels.Pipe.SourceChannel;
 import java.util.Arrays;
-import java.util.Scanner;
+import java.util.HashSet;
 
-public class Sort_Color {
-
+public class Longest_Consecutive_Sequence {
     public static void main(String[] args) {
 
-        int arr[] = {  };
+        int arr[] = { 1,4,8,9,11,10,2,1 };
         int n = arr.length;
 
         Arrays.sort(arr);
-        
-        for (int i : arr) {
-            System.out.println(i + ",");
-        }
 
         int len = 1;
         int curLen = 1;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n -1; i++) {
+            if(arr[i] == arr[i+1]) continue;
             if (arr[i] + 1 == arr[i + 1]) {
                 curLen++;
-                i++;
-                System.out.println("Cur len"+ curLen);
             } else {
                 curLen = 1;
-                i++;
             }
             len = Math.max(len, curLen);
         }
 
         System.out.println("Length = " + len);
-
     }
-};
+
+}
