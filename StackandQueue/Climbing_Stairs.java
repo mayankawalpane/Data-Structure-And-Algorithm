@@ -17,7 +17,7 @@
     
 // }
 
-package Stack and Queue;
+package StackandQueue;
 public class Climbing_Stairs {
     public int climbStairs(int n) {
 
